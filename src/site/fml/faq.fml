@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs id="FAQ" title="Frequently Asked Questions">
+  <part id="General">
+    <faq id="question">
+      <question>Why another Doxygen plugin?</question>
+      <answer>
+        <p>
+          Existing plugins are either broken (can't find Doxygen in PATH),
+          or only configurable through Maven, and not the Doxygen config file.
+        </p>
+      </answer>
+    </faq>
+  </part>
+</faqs>

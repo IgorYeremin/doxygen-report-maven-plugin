@@ -1,0 +1,31 @@
+ ------
+ Introduction
+ ------
+ ------
+ YYYY-MM-DD
+ ------
+
+
+${project.name}
+
+  ${project.description}
+
+* Goals Overview
+
+  * {{{./create-config-mojo.html}doxygen-report:create-config}} Creates default Doxygen config file.
+
+  * {{{./report-mojo.html}doxygen-report:report}} Runs Doxygen to generate API documentation.
+
+* Usage
+
+  * Install {{{http://doxygen.com/}Doxygen}} and add it to PATH.
+
+  * Run <<<mvn doxygen-report:create-config>>>.
+
+  * Make customizations to <src/doxygen/doxygen.config>.
+
+  * When you run <<<mvn site>>> it will contain the "Doxygen API documentation" report.
+
+  Full instructions on the {{{./usage.html}Usage page}}.
+
+  Example confgurations on the {{{./examples.html}Examples page}}.

@@ -1,0 +1,26 @@
+ ------
+ Usage
+ ------
+ ------
+ YYYY-MM-DD
+ ------
+
+Usage
+
+  Default assumes that Doxygen is installed and is available via PATH. Change <<executableName>> if that's not the case.
+
+  Default location for the Doxygen config file in <src/doxygen/doxygen.config>. Change with <<doxygenConf>>.
+
+  You can get Doxygen to generate a default config file with {{{./create-config-mojo.html}doxygen-report:create-config}}.
+
+  When creating the reports, the plugin will modify the config file and insert the following parameters at the top:
+
++-----+
+PROJECT_NAME = "${project.artifactId}"
+PROJECT_NUMBER = "${project.version}"
+OUTPUT_DIRECTORY = "${doxygen-report.outputDirectory}"
+INPUT = "${doxygen-report.input}"
+RECURSIVE = YES
++-----+
+
+  They can be overridden by re-defining them in the doxygen config file.

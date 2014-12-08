@@ -1,0 +1,53 @@
+ ------
+ Example
+ ------
+ ------
+ YYYY-MM-DD
+ ------
+
+Examples
+
+* Basic configuration
+
++-----+
+<project>
+  ...
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+      </plugin>
+    </plugins>
+    ...
+  </reporting>
+  ...
+</project>
++-----+
+
+
+* Full configuration
+
++-----+
+<project>
+  ...
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+        <configuration>
+          <doxygenConf>${basedir}/src/doxygen/doxygen.config</doxygenConf>
+          <outputDirectory>\${project.reporting.outputDirectory}/doxygen</outputDirectory>
+          <input>${basedir}/src</input>
+          <executableName>doxygen</executableName>
+        </configuration>
+      </plugin>
+    </plugins>
+    ...
+  </reporting>
+  ...
+</project>
++-----+
