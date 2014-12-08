@@ -1,1 +1,0 @@
-C:\progs\jdk-6u45-windows-x64\jre\..\bin\javadoc.exe @options @packages
